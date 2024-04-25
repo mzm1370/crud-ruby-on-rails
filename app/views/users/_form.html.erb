@@ -1,0 +1,20 @@
+<%= form_for(user) do |f| %>
+  <div class="w-full p-4 sm:ml-64 justify-center">
+    <div class="mb-4">
+      <%= f.label :email, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.email_field :email, class: "form-input appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input w-1/2" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :username, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.text_field :username, class: "form-input appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input w-1/2" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :password, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.password_field :password, class: "form-input appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input w-1/2" %>
+    </div>
+    <div class="flex items-center justify-between">
+      <%= f.submit class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+      <%= link_to "Back", users_path, class: "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" %>
+    </div>
+  </div>
+<% end %>
