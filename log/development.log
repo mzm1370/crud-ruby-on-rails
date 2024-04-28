@@ -62036,3 +62036,838 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 3273)
 
 
+Started GET "/logout" for ::1 at 2024-04-25 16:12:38 +0330
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 548)
+
+
+Started GET "/login" for ::1 at 2024-04-25 16:12:38 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1720)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1865)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2688)
+
+
+Started GET "/register" for ::1 at 2024-04-25 16:12:41 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 690)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 848)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 1950)
+
+
+Started GET "/login" for ::1 at 2024-04-25 16:12:42 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1571)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1680)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2014)
+
+
+Started GET "/register" for ::1 at 2024-04-25 16:12:50 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 685)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1187)
+
+
+Started GET "/login" for ::1 at 2024-04-25 16:12:55 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1532)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1641)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1959)
+
+
+Started POST "/login" for ::1 at 2024-04-25 16:43:17 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+error:#<User:0x00007825e94e5688>
+Redirected to http://localhost:3000/
+Completed 302 Found in 526ms (ActiveRecord: 1.3ms | Allocations: 1359)
+
+
+Started GET "/" for ::1 at 2024-04-25 16:43:18 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 160)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1138)
+
+
+Started GET "/users" for ::1 at 2024-04-25 16:44:56 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2165)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2301)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.7ms | Allocations: 3266)
+
+
+Started GET "/logout" for ::1 at 2024-04-25 16:45:38 +0330
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 354)
+
+
+Started GET "/login" for ::1 at 2024-04-25 16:45:38 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1546)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1657)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1975)
+
+
+Started GET "/register" for ::1 at 2024-04-25 16:45:42 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 685)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 1187)
+
+
+Started POST "/register" for ::1 at 2024-04-25 16:45:54 +0330
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"nn@yahoo.com", "username"=>"nn", "password"=>"[FILTERED]"}, "commit"=>"Create an account"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'nn' LIMIT 1[0m
+  ↳ app/controllers/registrations_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'nn@yahoo.com' LIMIT 1[0m
+  ↳ app/controllers/registrations_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:8:in `create'
+Redirected to http://localhost:3000/register
+Completed 302 Found in 278ms (ActiveRecord: 0.9ms | Allocations: 3568)
+
+
+Started GET "/register" for ::1 at 2024-04-25 16:45:54 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 687)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1193)
+
+
+Started GET "/register" for ::1 at 2024-04-28 20:10:02 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 685)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1189)
+
+
+Started GET "/login" for ::1 at 2024-04-28 20:10:06 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1533)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1642)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1960)
+
+
+Started GET "/register" for ::1 at 2024-04-28 22:25:17 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 685)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1191)
+
+
+Started GET "/login" for ::1 at 2024-04-28 22:25:19 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1539)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1648)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 1966)
+
+
+Started GET "/register" for ::1 at 2024-04-28 22:25:20 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 685)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 1179)
+
+
+Started GET "/register" for ::1 at 2024-04-28 22:26:11 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 685)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1175)
+
+
+Started GET "/login" for ::1 at 2024-04-28 22:26:13 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1524)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1633)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 1951)
+
+
+Started GET "/register" for ::1 at 2024-04-28 22:26:14 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 685)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1187)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('2634365495370355740', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddRoleToUsers (20240428185944)
+  [1m[35m (21.3ms)[0m  [1m[35mALTER TABLE `users` ADD `role` varchar(255)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240428185944')[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('2634365495370355740')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/login" for ::1 at 2024-04-28 22:31:49 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1656)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1797)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2728)
+
+
+Started POST "/login" for ::1 at 2024-04-28 22:31:53 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+error:#<User:0x00007825fcf0e020>
+Started POST "/login" for ::1 at 2024-04-28 22:31:53 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 545ms (ActiveRecord: 0.5ms | Allocations: 6481)
+
+
+error:#<User:0x00007825fcfb5370>
+Redirected to http://localhost:3000/
+Completed 302 Found in 507ms (ActiveRecord: 0.5ms | Allocations: 2044)
+
+
+Started GET "/" for ::1 at 2024-04-28 22:31:54 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 227)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 2560)
+
+
+Started GET "/users" for ::1 at 2024-04-28 22:31:56 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2373)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2544)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.7ms | Allocations: 4156)
+
+
+Started GET "/users/6/edit" for ::1 at 2024-04-28 22:31:59 +0330
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.3ms | Allocations: 1365)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1428)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1564)
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 0.7ms | Allocations: 3616)
+
+
+Started GET "/home" for ::1 at 2024-04-28 22:54:44 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 460)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1411)
+Completed 200 OK in 42ms (Views: 6.3ms | ActiveRecord: 2.1ms | Allocations: 30134)
+
+
+Started GET "/home" for ::1 at 2024-04-28 22:54:45 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 186)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.5ms | Allocations: 1313)
+
+
+Started GET "/logout" for ::1 at 2024-04-28 22:54:46 +0330
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 625)
+
+
+Started GET "/login" for ::1 at 2024-04-28 22:54:47 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2662)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2824)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3814)
+
+
+Started POST "/login" for ::1 at 2024-04-28 22:54:52 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+error:#<User:0x00007ca884b5fcd0>
+Redirected to http://localhost:3000/
+Completed 302 Found in 514ms (ActiveRecord: 0.4ms | Allocations: 1398)
+
+
+Started GET "/" for ::1 at 2024-04-28 22:54:53 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | Allocations: 172)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms | Allocations: 1175)
+
+
+Started GET "/users" for ::1 at 2024-04-28 22:54:54 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2838)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3010)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.7ms | Allocations: 4802)
+
+
+Started GET "/users/new" for ::1 at 2024-04-28 22:54:55 +0330
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.8ms | Allocations: 3349)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3634)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3790)
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 0.7ms | Allocations: 4955)
+
+
+Started GET "/users/new" for ::1 at 2024-04-28 22:57:31 +0330
+Started GET "/users/new" for ::1 at 2024-04-28 22:57:31 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#new as HTML
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.2ms | Allocations: 5087)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 6327)
+  Rendered users/_form.html.erb (Duration: 8.9ms | Allocations: 5622)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 6280)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 7278)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 7332)
+Completed 200 OK in 45ms (Views: 16.2ms | ActiveRecord: 1.2ms | Allocations: 37123)
+
+
+Completed 200 OK in 46ms (Views: 17.0ms | ActiveRecord: 1.7ms | Allocations: 37733)
+
+
+Started GET "/users/new" for ::1 at 2024-04-28 22:59:06 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.4ms | Allocations: 4938)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 5607)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5695)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.9ms | Allocations: 34359)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    14:     </div>
+    15:     <div class="mb-4">
+    16:       <%= f.label :role, class: "block text-gray-700 font-bold mb-2" %>
+    17:       <%= f.select :role ["admin", "user"], class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" %>
+    18:     </div>
+    19:     <div class="flex items-center justify-between">
+    20:       <%= f.submit class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+  
+app/views/users/_form.html.erb:17:in `[]'
+app/views/users/_form.html.erb:17
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/users/new" for ::1 at 2024-04-28 22:59:33 +0330
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 14.3ms | Allocations: 9986)
+  Rendered users/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 10277)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 11132)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.4ms | Allocations: 13159)
+
+
+Started GET "/users/new" for ::1 at 2024-04-28 23:06:36 +0330
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 2014)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2296)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3079)
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 0.8ms | Allocations: 5246)
+
+
+Started GET "/users/new" for ::1 at 2024-04-28 23:07:28 +0330
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 1431)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1714)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 1792)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.8ms | Allocations: 3735)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for(user) do |f| %>
+  <div class="w-full p-4 sm:ml-64 justify-center">
+    <div class="mb-4">
+      <%= f.label :email, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.email_field :email, class: "form-input appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input w-1/2" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :username, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.text_field :username, class: "form-input appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input w-1/2" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :password, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.password_field :password, class: "form-input appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input w-1/2" %>
+    </div>
+    <div class="mb-4">
+      <%= f.label :role, class: "block text-gray-700 font-bold mb-2" %>
+      <%= f.select :role, ["admin", "user"], ,class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" %>
+    </div>
+    <div class="flex items-center justify-between">
+      <%= f.submit class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+      <%= link_to "Back", users_path, class: "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" %>
+    </div>
+  </div>
+<% end %>
+
+):
+1:    <%= form_for(user) do |f| %>
+2:      <div class="w-full p-4 sm:ml-64 justify-center">
+3:        <div class="mb-4">
+4:          <%= f.label :email, class: "block text-gray-700 font-bold mb-2" %>
+5:          <%= f.email_field :email, class: "form-input appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input w-1/2" %>
+6:        </div>
+7:        <div class="mb-4">
+8:          <%= f.label :username, class: "block text-gray-700 font-bold mb-2" %>
+9:          <%= f.text_field :username, class: "form-input appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input w-1/2" %>
+10:        </div>
+11:        <div class="mb-4">
+12:          <%= f.label :password, class: "block text-gray-700 font-bold mb-2" %>
+13:          <%= f.password_field :password, class: "form-input appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 form-input w-1/2" %>
+14:        </div>
+15:        <div class="mb-4">
+16:          <%= f.label :role, class: "block text-gray-700 font-bold mb-2" %>
+17:          <%= f.select :role, ["admin", "user"], ,class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" %>
+18:        </div>
+19:        <div class="flex items-center justify-between">
+20:          <%= f.submit class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+21:          <%= link_to "Back", users_path, class: "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" %>
+22:        </div>
+23:      </div>
+24:    <% end %>
+  
+app/views/users/_form.html.erb:17: syntax error, unexpected ','
+app/views/users/_form.html.erb:17: syntax error, unexpected ','
+app/views/users/_form.html.erb:17: syntax error, unexpected ','
+app/views/users/_form.html.erb:17: syntax error, unexpected ','
+app/views/users/new.html.erb:3
+Started GET "/users/new" for ::1 at 2024-04-28 23:07:51 +0330
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.0ms | Allocations: 2031)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2312)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3094)
+Completed 200 OK in 25ms (Views: 18.3ms | ActiveRecord: 0.7ms | Allocations: 5063)
+
+
+Started GET "/users" for ::1 at 2024-04-28 23:09:05 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3316)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4153)
+Completed 200 OK in 39ms (Views: 9.7ms | ActiveRecord: 2.2ms | Allocations: 32842)
+
+
+Started GET "/users/6/edit" for ::1 at 2024-04-28 23:09:07 +0330
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 14.9ms | Allocations: 4004)
+  Rendered users/edit.html.erb within layouts/application (Duration: 17.1ms | Allocations: 4310)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 4468)
+Completed 200 OK in 29ms (Views: 18.8ms | ActiveRecord: 0.8ms | Allocations: 6729)
+
+
+Started PATCH "/users/6" for ::1 at 2024-04-28 23:09:17 +0330
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"meysamzohouri.mehriz@gmail.com", "username"=>"meysam", "password"=>"[FILTERED]", "role"=>"admin"}, "commit"=>"Update User", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+User meysam: {"email"=>"meysamzohouri.mehriz@gmail.com", "username"=>"meysam", "password"=>"password", "role"=>"admin"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'meysam' AND `users`.`id` != 6 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' AND `users`.`id` != 6 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE `users` SET `users`.`password_digest` = '$2a$12$5JqHid0pVWXYwV5MvusXWOyIB7lFT7eABJJMMS6iMiWoIcYr2uyE.', `users`.`updated_at` = '2024-04-28 19:39:18.010884', `users`.`role` = 'admin' WHERE `users`.`id` = 6[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 278ms (ActiveRecord: 3.4ms | Allocations: 6827)
+
+
+Started GET "/users" for ::1 at 2024-04-28 23:09:18 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2197)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2345)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.7ms | Allocations: 3355)
+
+
+Started GET "/users" for ::1 at 2024-04-28 23:10:02 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2788)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3571)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.7ms | Allocations: 5462)
+
+
+Started GET "/users/7/edit" for ::1 at 2024-04-28 23:10:07 +0330
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 2027)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2273)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2409)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 0.8ms | Allocations: 3965)
+
+
+Started PATCH "/users/7" for ::1 at 2024-04-28 23:10:13 +0330
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mzm@yahoo.com", "username"=>"mzm", "password"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Update User", "id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+User meysam: {"email"=>"mzm@yahoo.com", "username"=>"mzm", "password"=>"password", "role"=>"user"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'mzm' AND `users`.`id` != 7 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mzm@yahoo.com' AND `users`.`id` != 7 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE `users` SET `users`.`password_digest` = '$2a$12$ROPxmMmgb0tPqVSxE6hJ0O0.oYqpszXAxQSqsHKCZinHA6Vc0WyXm', `users`.`updated_at` = '2024-04-28 19:40:14.135950', `users`.`role` = 'user' WHERE `users`.`id` = 7[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 295ms (ActiveRecord: 3.2ms | Allocations: 4983)
+
+
+Started GET "/users" for ::1 at 2024-04-28 23:10:14 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2158)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2297)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.7ms | Allocations: 3288)
+
+
+Started GET "/users/8/edit" for ::1 at 2024-04-28 23:10:15 +0330
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.9ms | Allocations: 1519)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1575)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1711)
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 0.9ms | Allocations: 3120)
+
+
+Started PATCH "/users/8" for ::1 at 2024-04-28 23:10:21 +0330
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"m@yahoo.com", "username"=>"meymon", "password"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Update User", "id"=>"8"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+User meysam: {"email"=>"m@yahoo.com", "username"=>"meymon", "password"=>"password", "role"=>"user"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'meymon' AND `users`.`id` != 8 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'm@yahoo.com' AND `users`.`id` != 8 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE `users` SET `users`.`password_digest` = '$2a$12$99Jbd4kZYLOuOabi2M3sNeW.MJszqJG2B0uXGXR5X9Tjplw36A192', `users`.`updated_at` = '2024-04-28 19:40:21.584691', `users`.`role` = 'user' WHERE `users`.`id` = 8[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 283ms (ActiveRecord: 4.9ms | Allocations: 4830)
+
+
+Started GET "/users" for ::1 at 2024-04-28 23:10:21 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2161)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2300)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.6ms | Allocations: 3289)
+
+
+Started GET "/users/9/edit" for ::1 at 2024-04-28 23:10:22 +0330
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 13.8ms | Allocations: 1519)
+  Rendered users/edit.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1575)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 1711)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.7ms | Allocations: 3128)
+
+
+Started PATCH "/users/9" for ::1 at 2024-04-28 23:10:28 +0330
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"reza@yahoo.com", "username"=>"reza", "password"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Update User", "id"=>"9"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+User meysam: {"email"=>"reza@yahoo.com", "username"=>"reza", "password"=>"password", "role"=>"user"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'reza' AND `users`.`id` != 9 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'reza@yahoo.com' AND `users`.`id` != 9 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE `users` SET `users`.`password_digest` = '$2a$12$6pQYnlWJ9brTWHDf1lIGp.CxsrbWuNjJsf55jspLfG91laRb31CTW', `users`.`updated_at` = '2024-04-28 19:40:28.363765', `users`.`role` = 'user' WHERE `users`.`id` = 9[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 285ms (ActiveRecord: 3.2ms | Allocations: 4818)
+
+
+Started GET "/users" for ::1 at 2024-04-28 23:10:28 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2164)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2302)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.6ms | Allocations: 3278)
+
+
+Started GET "/users/12/edit" for ::1 at 2024-04-28 23:10:31 +0330
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 1518)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1574)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1710)
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 1.6ms | Allocations: 3127)
+
+
+Started PATCH "/users/12" for ::1 at 2024-04-28 23:10:37 +0330
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"nn@yahoo.com", "username"=>"nn", "password"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Update User", "id"=>"12"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+User meysam: {"email"=>"nn@yahoo.com", "username"=>"nn", "password"=>"password", "role"=>"user"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'nn' AND `users`.`id` != 12 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'nn@yahoo.com' AND `users`.`id` != 12 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE `users` SET `users`.`password_digest` = '$2a$12$pIsw/lQTEc6C7vzETUr.sOFHdX3YHYaDhk2qpVonH.E/9Qs/eVHza', `users`.`updated_at` = '2024-04-28 19:40:37.557466', `users`.`role` = 'user' WHERE `users`.`id` = 12[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:32:in `update'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 318ms (ActiveRecord: 4.5ms | Allocations: 4804)
+
+
+Started GET "/users" for ::1 at 2024-04-28 23:10:37 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2167)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2305)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 3293)
+
+
+Started GET "/logout" for ::1 at 2024-04-28 23:12:13 +0330
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 540)
+
+
+Started GET "/login" for ::1 at 2024-04-28 23:12:13 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2064)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2209)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3193)
+
+
+Started GET "/register" for ::1 at 2024-04-28 23:14:08 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 1200)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2477)
+
+
+Started GET "/login" for ::1 at 2024-04-28 23:14:09 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1589)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1698)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2032)
+
+

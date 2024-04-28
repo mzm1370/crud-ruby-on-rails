@@ -46,7 +46,7 @@ class UsersController < ApplicationController
     private
         def user_params
             logger.debug "User meysam: #{params.require(:user)}"
-            params.require(:user).permit(:email, :username, :password)
+            params.require(:user).permit(:email, :username, :password, :role)
         end
 
         def set_user
