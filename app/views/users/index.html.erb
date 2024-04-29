@@ -1,7 +1,9 @@
 <div class="w-full p-4 sm:ml-64 justify-center">
   <div class="flex justify-between items-center mb-4 border-b border-gray-300 py-4">
     <h1 class="text-2xl font-bold px-4">Users</h1>
-    <%= link_to "New User", new_user_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+    <% if current_user.admin? %>
+      <%= link_to "New User", new_user_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+    <% end %>
   </div>
   <table class="min-w-full">
     <thead>
@@ -24,10 +26,12 @@
                 <path d="M15.08 4.03a3 3 0 0 1 4.24 4.24l-9.83 9.83c-.63.63-1.71.19-1.71-.71V14h-1.5c-.55 0-1.04-.36-1.21-.89l-1.5-4.5c-.17-.53.23-1.1.77-1.1h3.5c.55 0 1.04.36 1.21.89l.14.42h6.21a1 1 0 0 0 .71-1.71l-2.5-2.5zM15 2H5c-1.1 0-1.99.9-1.99 2L3 18a2 2 0 0 0 2 2l12-12a2 2 0 0 0 0-2A1.99 1.99 0 0 0 15 2zm2.71 1.29a.996.996 0 0 0 0-1.41l-2.5-2.5a.996.996 0 0 0-1.41 0l-1.83 1.83 2.5 2.5 1.83-1.83z"/>
               </svg>
             <% end %>
-            <%= button_to user_path(user), method: :delete, data: { confirm: "Are you sure?" }, class: "text-red-500" do %>
-              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 3a1 1 0 0 0-1 1v10a1 1 0 0 0 2 0V4a1 1 0 0 0-1-1zM13 3a1 1 0 0 0-1 1v10a1 1 0 0 0 2 0V4a1 1 0 0 0-1-1zM17 6H3a1 1 0 0 0 0 2h1v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8h1a1 1 0 0 0 0-2zM9 14H8v2h1v-2zm4 0h-1v2h1v-2zm2-7H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm-1 10H6V9h8v8z"/>
-              </svg>
+            <% if current_user.admin? %>
+              <%= button_to user_path(user), method: :delete, data: { confirm: "Are you sure?" }, class: "text-red-500" do %>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 3a1 1 0 0 0-1 1v10a1 1 0 0 0 2 0V4a1 1 0 0 0-1-1zM13 3a1 1 0 0 0-1 1v10a1 1 0 0 0 2 0V4a1 1 0 0 0-1-1zM17 6H3a1 1 0 0 0 0 2h1v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8h1a1 1 0 0 0 0-2zM9 14H8v2h1v-2zm4 0h-1v2h1v-2zm2-7H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm-1 10H6V9h8v8z"/>
+                </svg>
+              <% end %>
             <% end %>
           </td>
         </tr>

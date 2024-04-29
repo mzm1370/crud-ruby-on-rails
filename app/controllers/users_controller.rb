@@ -2,10 +2,17 @@ class UsersController < ApplicationController
     # before_action :set_user, only: [:show, :edit, :update, :destroy]
 
     def index
-        @users = User.all
-    end
+        if current_user.admin?
+          @users = User.all
+        else
+          @users = [current_user]  
+        end
+        authorize User
+      end
 
     def show
+        @user = User.find(params[:id])
+        authorize @user
     end
 
     def new
