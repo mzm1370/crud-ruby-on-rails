@@ -6,6 +6,8 @@ class RegistrationsController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.role = 'user'
+    puts @user.inspect 
     if @user.save
       redirect_to register_path,notice:'User was successfully created'
     else
