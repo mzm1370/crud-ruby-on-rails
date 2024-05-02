@@ -64399,3 +64399,1418 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1963)
 
 
+Started GET "/" for ::1 at 2024-05-02 12:19:10 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3525)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:19:17 +0330
+Processing by SessionsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 683)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:19:20 +0330
+Processing by SessionsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 523)
+
+
+Started GET "/" for ::1 at 2024-05-02 12:21:36 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3525)
+
+
+Started GET "/" for ::1 at 2024-05-02 12:21:38 +0330
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 576)
+
+
+Started GET "/" for ::1 at 2024-05-02 12:21:40 +0330
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 523)
+
+
+Started GET "/" for ::1 at 2024-05-02 12:21:40 +0330
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 523)
+
+
+Started GET "/" for ::1 at 2024-05-02 12:21:40 +0330
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 523)
+
+
+Started GET "/" for ::1 at 2024-05-02 12:21:41 +0330
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 522)
+
+
+Started GET "/" for ::1 at 2024-05-02 12:21:41 +0330
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 522)
+
+
+Started GET "/" for ::1 at 2024-05-02 12:21:41 +0330
+Processing by WelcomeController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 522)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:21:52 +0330
+Processing by SessionsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 682)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:22:04 +0330
+Processing by SessionsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 522)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:27:05 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2765)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3623)
+Completed 200 OK in 24ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 11757)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:27:10 +0330
+Processing by RegistrationsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 730)
+
+
+Started POST "/login" for ::1 at 2024-05-02 12:27:17 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 284ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 21143)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:27:27 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1435)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1557)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2113)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:27:29 +0330
+Processing by RegistrationsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 531)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:27:58 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1486)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1967)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:31:12 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1485)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1967)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:31:22 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1486)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1975)
+
+
+Started GET "/" for ::1 at 2024-05-02 12:31:26 +0330
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 616)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:31:26 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1423)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1544)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2086)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:31:30 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1485)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1969)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:31:32 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1486)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1980)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:31:41 +0330
+Processing by RegistrationsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 534)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:32:57 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2765)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3623)
+Completed 200 OK in 19ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 11741)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:33:00 +0330
+Processing by RegistrationsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 737)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:33:05 +0330
+Processing by RegistrationsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 524)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:34:05 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1441)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1563)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2120)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:35:50 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2765)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3623)
+Completed 200 OK in 19ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 11788)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:35:53 +0330
+Processing by RegistrationsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 746)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:38:01 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RegistrationsController#new as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3555)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:40:37 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2765)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3623)
+Completed 200 OK in 19ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 11768)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:40:39 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1140)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1299)
+Completed 200 OK in 19ms (Views: 4.2ms | ActiveRecord: 1.2ms | Allocations: 20623)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:40:41 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1379)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1489)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2050)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:40:42 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 684)
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1197)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:40:43 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1377)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1487)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 1980)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:40:44 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 683)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 1183)
+
+
+Started GET "/welcome" for ::1 at 2024-05-02 12:40:50 +0330
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+Started GET "/home" for ::1 at 2024-05-02 12:40:58 +0330
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 623)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:40:58 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1426)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1547)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2105)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:41:08 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 686)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 1204)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:41:09 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1377)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1486)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 1978)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:41:10 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 683)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 1185)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:41:11 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1485)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1979)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:41:12 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 683)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 1189)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:41:13 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1377)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1486)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 1986)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:41:14 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1485)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1979)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:45:06 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 683)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1173)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:45:08 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1485)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 1973)
+
+
+Started POST "/login" for ::1 at 2024-05-02 12:45:12 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 270ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 3090)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:49:17 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1446)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1587)
+Completed 200 OK in 25ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2761)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:49:20 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 714)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 872)
+Completed 200 OK in 12ms (Views: 2.8ms | ActiveRecord: 2.1ms | Allocations: 5365)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:49:23 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1378)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1487)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2038)
+
+
+Started GET "/logout" for ::1 at 2024-05-02 12:49:28 +0330
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 586)
+
+
+Started GET "/logout" for ::1 at 2024-05-02 12:49:31 +0330
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 534)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:49:43 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2765)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3623)
+Completed 200 OK in 19ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 11772)
+
+
+Started POST "/login" for ::1 at 2024-05-02 12:49:52 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 302ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 21147)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:50:18 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1445)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1587)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2756)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:50:33 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2765)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3623)
+Completed 200 OK in 19ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 11766)
+
+
+Started GET "/home" for ::1 at 2024-05-02 12:50:35 +0330
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 621)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:50:35 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1426)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1548)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2103)
+
+
+Started POST "/login" for ::1 at 2024-05-02 12:50:41 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 302ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 21139)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:52:06 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1445)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1587)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2751)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:56:59 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3097)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3955)
+Completed 200 OK in 21ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 11760)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:57:01 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1343)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1502)
+Completed 200 OK in 22ms (Views: 5.4ms | ActiveRecord: 2.0ms | Allocations: 20634)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:57:02 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1551)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1661)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2019)
+
+
+Started POST "/login" for ::1 at 2024-05-02 12:57:09 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 273ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 3124)
+
+
+Started GET "/home" for ::1 at 2024-05-02 12:57:15 +0330
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 624)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:57:15 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1616)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1738)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2124)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:58:52 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3109)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3967)
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 11773)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:58:56 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1642)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1766)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2162)
+
+
+Started GET "/register" for ::1 at 2024-05-02 12:58:57 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1341)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1500)
+Completed 200 OK in 27ms (Views: 5.5ms | ActiveRecord: 1.9ms | Allocations: 20632)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:58:58 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1531)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1641)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1999)
+
+
+Started POST "/login" for ::1 at 2024-05-02 12:59:15 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 271ms (ActiveRecord: 0.5ms | Allocations: 3201)
+
+
+Started GET "/home" for ::1 at 2024-05-02 12:59:15 +0330
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 596)
+
+
+Started GET "/login" for ::1 at 2024-05-02 12:59:15 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1615)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1735)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2120)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:00:54 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3121)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3979)
+Completed 200 OK in 19ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 11784)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:00:59 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 308ms (ActiveRecord: 3.4ms | Allocations: 21237)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:01:00 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 358)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 3069)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:05:33 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 158)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1324)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:05:34 +0330
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 575)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:05:34 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1615)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1736)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2123)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:07:07 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1661)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1802)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2766)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:07:11 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 371ms (ActiveRecord: 4.8ms | Allocations: 4706)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:07:11 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | Allocations: 227)
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 2660)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:07:20 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 158)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 0.8ms | Allocations: 1322)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:07:21 +0330
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 567)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:07:21 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1607)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1727)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2111)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:09:20 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1546)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1655)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1991)
+
+
+Started GET "/register" for ::1 at 2024-05-02 13:09:22 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1353)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1511)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2647)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:09:23 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1555)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1664)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2019)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:09:27 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | Allocations: 158)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms | Allocations: 1248)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:09:30 +0330
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 393)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:09:30 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1552)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1664)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2000)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:13:21 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3133)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3991)
+Completed 200 OK in 19ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 11796)
+
+
+Started GET "/register" for ::1 at 2024-05-02 13:13:23 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1365)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1524)
+Completed 200 OK in 23ms (Views: 4.9ms | ActiveRecord: 2.2ms | Allocations: 20657)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:13:24 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1541)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1651)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2009)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:13:29 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 273ms (ActiveRecord: 0.7ms | Allocations: 3209)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:13:30 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 358)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 3064)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:13:32 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 158)
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 0.9ms | Allocations: 1324)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:13:33 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 3373)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3544)
+Completed 200 OK in 21ms (Views: 12.7ms | ActiveRecord: 1.2ms | Allocations: 5981)
+
+
+Started GET "/logout" for ::1 at 2024-05-02 13:15:31 +0330
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 25ms (ActiveRecord: 1.9ms | Allocations: 24556)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:15:31 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2967)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3817)
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 8728)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:15:34 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1546)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1657)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2036)
+
+
+Started GET "/register" for ::1 at 2024-05-02 13:15:36 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1338)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 1497)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 2641)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:15:37 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1533)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1643)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 2001)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:15:40 +0330
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 571)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:15:40 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1602)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1723)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2109)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:15:43 +0330
+Processing by WelcomeController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 370)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:15:43 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1558)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1669)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2005)
+
+
+Started GET "/users/new" for ::1 at 2024-05-02 13:15:48 +0330
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 551)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:15:48 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1599)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1719)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2102)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:21:36 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1534)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1643)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1979)
+
+
+Started GET "/register" for ::1 at 2024-05-02 13:21:38 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 712)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 838)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 1192)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:21:39 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1550)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1659)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1995)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:21:42 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1409)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1529)
+Completed 200 OK in 271ms (Views: 1.8ms | ActiveRecord: 0.7ms | Allocations: 3174)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:21:53 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1528)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1642)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1980)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:21:59 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 262ms (ActiveRecord: 0.2ms | Allocations: 996)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:22:00 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 358)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 2074)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:22:02 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3372)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3543)
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 1.0ms | Allocations: 5866)
+
+
+Started GET "/logout" for ::1 at 2024-05-02 13:22:05 +0330
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms | Allocations: 999)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:22:05 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1561)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1673)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2024)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:22:15 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 277ms (ActiveRecord: 0.8ms | Allocations: 973)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:22:16 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | Allocations: 158)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1190)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:22:18 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2587)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2723)
+Completed 200 OK in 18ms (Views: 10.4ms | ActiveRecord: 1.6ms | Allocations: 3932)
+
+
+Started GET "/users/12/edit" for ::1 at 2024-05-02 13:22:22 +0330
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:23:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 23.0ms | Allocations: 10972)
+  Rendered users/edit.html.erb within layouts/application (Duration: 24.9ms | Allocations: 11254)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 11410)
+Completed 200 OK in 37ms (Views: 26.5ms | ActiveRecord: 1.5ms | Allocations: 13000)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:22:32 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2623)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2760)
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 1.3ms | Allocations: 4110)
+
+
+Started DELETE "/users/9" for ::1 at 2024-05-02 13:22:36 +0330
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:45:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:46:in `destroy'
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 9[0m
+  ↳ app/controllers/users_controller.rb:46:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:46:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 8ms (ActiveRecord: 2.6ms | Allocations: 3109)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:22:36 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2206)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2345)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 3565)
+
+
+Started GET "/users/new" for ::1 at 2024-05-02 13:22:39 +0330
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.5ms | Allocations: 1562)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1789)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1925)
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 0.5ms | Allocations: 3040)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:22:43 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2206)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2342)
+Completed 200 OK in 20ms (Views: 12.3ms | ActiveRecord: 1.7ms | Allocations: 3536)
+
+
+Started GET "/logout" for ::1 at 2024-05-02 13:22:49 +0330
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms | Allocations: 917)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:22:49 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1553)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 1664)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 2000)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:22:54 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"nn@yahoo.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'nn@yahoo.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 262ms (ActiveRecord: 0.3ms | Allocations: 949)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:22:55 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 158)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 1198)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:22:58 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 363)
+Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 0.9ms | Allocations: 1624)
+
+
+Started GET "/users/12/edit" for ::1 at 2024-05-02 13:23:01 +0330
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:23:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.4ms | Allocations: 1301)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1357)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1493)
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 2919)
+
+
+Started GET "/users" for ::1 at 2024-05-02 13:23:02 +0330
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 226)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 362)
+Completed 200 OK in 11ms (Views: 4.5ms | ActiveRecord: 0.7ms | Allocations: 1597)
+
+
+Started GET "/logout" for ::1 at 2024-05-02 13:23:03 +0330
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms | Allocations: 910)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:23:03 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1553)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1664)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2000)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:23:09 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1373)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1486)
+Completed 200 OK in 273ms (Views: 1.8ms | ActiveRecord: 0.5ms | Allocations: 2503)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:23:50 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1647)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1788)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2751)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:23:55 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 281ms (ActiveRecord: 3.1ms | Allocations: 4656)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:23:55 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1635)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1755)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2136)
+
+
+Started POST "/login" for ::1 at 2024-05-02 13:24:03 +0330
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"meysamzohouri.mehriz@gmail.com", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'meysamzohouri.mehriz@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/home
+Completed 302 Found in 269ms (ActiveRecord: 0.6ms | Allocations: 957)
+
+
+Started GET "/home" for ::1 at 2024-05-02 13:24:03 +0330
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 227)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 2651)
+
+
+Started GET "/logout" for ::1 at 2024-05-02 13:24:05 +0330
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authenticate_request'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms | Allocations: 1046)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:24:05 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1604)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1715)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2065)
+
+
+Started GET "/register" for ::1 at 2024-05-02 13:24:10 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 911)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1069)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2029)
+
+
+Started POST "/register" for ::1 at 2024-05-02 13:24:21 +0330
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"zz@yahoo.com", "username"=>"zz", "password"=>"[FILTERED]"}, "commit"=>"Create an account"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'zz' LIMIT 1[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'zz@yahoo.com' LIMIT 1[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+Redirected to http://localhost:3000/register
+Completed 302 Found in 287ms (ActiveRecord: 0.8ms | Allocations: 4309)
+
+
+Started GET "/register" for ::1 at 2024-05-02 13:24:22 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 727)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 857)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1213)
+
+
+Started POST "/register" for ::1 at 2024-05-02 13:24:43 +0330
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mv@yahoo.com", "username"=>"mv", "password"=>"[FILTERED]"}, "commit"=>"Create an account"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'mv' LIMIT 1[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mv@yahoo.com' LIMIT 1[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/registrations_controller.rb:9:in `create'
+Redirected to http://localhost:3000/register
+Completed 302 Found in 267ms (ActiveRecord: 0.7ms | Allocations: 3484)
+
+
+Started GET "/register" for ::1 at 2024-05-02 13:24:43 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 727)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 855)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1197)
+
+
+Started GET "/login" for ::1 at 2024-05-02 13:24:49 +0330
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1534)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1643)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 1980)
+
+
+Started GET "/register" for ::1 at 2024-05-02 13:24:52 +0330
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 709)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 835)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1177)
+
+

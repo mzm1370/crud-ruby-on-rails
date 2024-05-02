@@ -1,19 +1,40 @@
 class ApplicationController < ActionController::Base
-    include Pundit
-    before_action :require_login, except: [:register]
+  include Pundit
+  before_action :authenticate_request, unless: :register_action?
+  before_action :require_login, except: [:register]
 
-    private
+  private
 
-    def current_user
-    @current_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
+  def authenticate_request
+    if session[:jwt_token]
+      begin
+        decoded_token = JWT.decode(session[:jwt_token], Rails.application.secrets.secret_key_base)
+        @current_user = User.find(decoded_token[0]['user_id'])
+      rescue JWT::DecodeError
+        session[:jwt_token] = nil
+        redirect_to login_url, notice: 'Session expired. Please log in again.'
+      end
+    else
+      redirect_to login_url, notice: 'You must log in to access this page.'
     end
-    helper_method :current_user
+  end
 
-    def require_login
-        unless current_user || request.path == "/login" || request.path == "/register"
-            redirect_to login_url, notice: "You must be logged in to access this page"
-        end
+  def current_user
+    @current_user
+  end
+  helper_method :current_user
+
+  def require_login
+    unless current_user || allowed_paths.include?(request.path)
+      redirect_to login_url, notice: 'You must log in to access this page.'
     end
+  end
 
-    
+  def allowed_paths
+    ['/login', '/register']
+  end
+
+  def register_action?
+    params[:controller] == 'users' && params[:action] == 'create'
+  end
 end
